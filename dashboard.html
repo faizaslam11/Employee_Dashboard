@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body class="bg-light">
+
+    
+
+    <h1 class="mb-4 text-white text-center dashboard-header">📋 Employee Dashboard</h1>
+    <!-- Container for the welcome message -->
+    <div class="container text-center mt-4">
+        <!-- Dynamic welcome message will be inserted here -->
+        <button id="generate-report" class="btn btn-success btn-lg mr-2 animate-btn">📄 Download PDF Report</button>
+        <button id="generate-excel" class="btn btn-success btn-lg mr-2 animate-btn">📊 Download Excel Report</button>
+        <button id="toggle-theme" class="btn btn-secondary btn-lg animate-btn">🌙 Toggle Dark Mode</button>
+        <button class="btn btn-danger" onclick="logoutUser()">Logout</button>
+    </div>
+    
+
+    <div class="container mt-5 p-4 rounded shadow-lg dashboard-container">
+        <a href="add.html" class="btn btn-primary mb-3 animate-btn">➕ Add Employee</a>
+        <table class="table table-striped table-hover" id="employee-table">
+            <thead>
+                <tr class="table-header">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Employee rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

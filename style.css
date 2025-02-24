@@ -1,0 +1,180 @@
+.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+.dark-mode .container, .dark-mode .table {
+    background-color: #222 !important;
+}
+.dark-mode .btn {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+.dark-mode .dashboard-container, 
+.dark-mode .table {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+.dark-mode .btn {
+    background-color: #444 !important;
+    color: white !important;
+    border: none;
+}
+
+/* 📋 Dashboard Styling */
+.dashboard-header {
+    background: linear-gradient(to right, #17a2b8, #007bff);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.dashboard-container {
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.9); }
+    to { transform: scale(1); }
+}
+
+/* 🎭 Button Hover Effect */
+.animate-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.animate-btn:hover {
+    transform: scale(1.05);
+}
+
+/* 🎭 Table Row Animation */
+tbody tr {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color: rgba(230, 232, 235, 0.911);
+}
+
+
+/* Add HTML */
+
+/* 🌟 Form Header */
+.form-header {
+    background: linear-gradient(to right, #17a2b8, #007bff);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* 🎭 Form Styling */
+.form-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ✨ Input Animations */
+.animate-input {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #ddd;
+}
+
+.animate-input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* 🎭 Button Hover Effect */
+.animate-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.animate-btn:hover {
+    transform: scale(1.05);
+}
+
+/* 🎭 Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Login -  register - pop up */
+/* Fade-in animation for login/register form */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Hover effect for input fields */
+input {
+    transition: all 0.3s ease;
+}
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Button animation */
+button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+/* Success Message Slide-in */
+.success-message {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: top 0.5s ease-in-out;
+}
+
+/* Error Message Shake Effect */
+.error-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+}
